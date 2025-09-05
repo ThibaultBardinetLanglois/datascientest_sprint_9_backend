@@ -32,7 +32,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Configuration CORS plus restrictive pour la production
 # On lit les origines autorisées depuis une variable d'environnement
-CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS', '').split(',')
+# CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS', '').split(',')
 
 
 SENTRY_DSN = os.environ.get('SENTRY_DSN')
